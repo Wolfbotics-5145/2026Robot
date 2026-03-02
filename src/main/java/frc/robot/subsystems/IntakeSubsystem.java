@@ -30,7 +30,7 @@ public class IntakeSubsystem extends SubsystemBase {
     var slot0Config = talonConfig.Slot0; /// sets it at slot 0 because if we set it at slot 100 people would look at us funny
 
     slot0Config.kS = 0.25;  /// this is the output to overcome static friction
-    slot0Config.kV = 0.06;  //0.12  this is the output per 1 unit of target velocity (how fast we want to move)
+    slot0Config.kV = 0.06;  /// (0.12 - keep this here for later)  this is the output per 1 unit of target velocity (how fast we want to move)
     slot0Config.kA = 0.01; /// this is the output per 1 unit of target acceleration (how fast we want to... accelerate?)
 
    /// this is our normal PID (Proportional Integral Derivative) stuff

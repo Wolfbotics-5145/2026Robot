@@ -41,7 +41,7 @@ private SwerveDrive swerveDrive;
     try {
       
       SwerveDriveTelemetry.verbosity = TelemetryVerbosity.HIGH;
-      System.out.println("****************************** Configure Drivetrain");
+      System.out.println("****************************** Configuring Drivetrain");
       swerveDrive = new SwerveParser(swerveJsonDirectory).createSwerveDrive(maximumSpeed); 
       System.out.println("############################## Drivetrain configured");
       swerveDrive.setHeadingCorrection(false);
