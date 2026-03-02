@@ -71,9 +71,8 @@ public class RobotContainer {
        () -> -MathUtil.applyDeadband(driverController.getRightX(), OperatorConstants.RIGHT_X_DEADBAND), 
        () -> -MathUtil.applyDeadband(driverController.getRightY(), OperatorConstants.RIGHT_Y_DEADBAND),
        () -> MathUtil.applyDeadband(driverController.getRightTriggerAxis(), 0.25),
-       () -> isAllianceColorRed());
+            this::isAllianceColorRed);
        
-       //System.out.println("setting SDS to the Drive Command");
        swerveDriveSubsystem.setDefaultCommand(driveCommand);
          
        

@@ -22,6 +22,30 @@ public final class Constants {
   public static final Matter CHASSIS    = new Matter(new Translation3d(0, 0, Units.inchesToMeters(8)), ROBOT_MASS);
   public static final double LOOP_TIME  = 0.13; //s, 20ms + 110ms sprk max velocity lag
 
+    public static final int INTAKE_ARM_MOTOR = 50;
+    public static final int INTAKE_ROLLER_MOTOR = 51;
+
+         public static final int SHOOTER_SHOOTING_MOTOR = 52;
+         public static final int SHOOTER_FEED_MOTOR = 53;
+
+                public static final int HOPPER_AGITATOR_MOTOR = 54;
+
+                     public static final int CLIMBER_MASTER_MOTOR = 55;
+                     public static final int CLIMBER_SLAVE_MOTOR = 56;
+
+
+
+    public static final double INTAKE_ARM_MIN_POSITION = 0.0;
+    public static final double INTAKE_ARM_MAX_POSITION = 90.0; /// placeholder, needs to be tuned -BM 3/1/26
+    public static final double INTAKE_ARM_START_POSITION =0.0;
+    // Start position,must move intake arm back to 0 (upright position) before turing robot on, or bad stuff WILL happen - BM
+
+                    public static final double CLIMBER_HOME_POSITION = 0.0;    /// all of these (most likely not home_pos)
+                    //public static final double CLIMBER_UP_POSITION = -7.5;   /// are placeholders and are subject to change
+                    public static final double CLIMBER_MAX_POSITION = 0.0;     /// -BM 3/1/26
+                    public static final double CLIMBER_MIN_POSITION = -10.00;
+
+
   public static final class LimelightConstants {
 
 
@@ -40,7 +64,7 @@ public final class Constants {
      public static final double kIrotation = 0.0;
      public static final double kDrotation = 0.0;
 
-     public static final String NOTE_CLASS_NAME = new String("note");
+
 
       }
 
