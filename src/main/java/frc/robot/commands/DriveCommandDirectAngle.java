@@ -57,8 +57,8 @@ public class DriveCommandDirectAngle extends Command {
          lhX = (! flipRedControls ? -1.0 : 1.0 ) * hX.getAsDouble();
          lhY = (! flipRedControls ? -1.0 : 1.0 ) * hY.getAsDouble();
 
-         if (lhX < 0.5 && lhX > -0.5) lhX = 0.0;
-         if (lhY < 0.5 && lhY > -0.5) lhY = 0.0;
+        //  if (lhX < 0.5 && lhX > -0.5) lhX = 0.0;
+        //  if (lhY < 0.5 && lhY > -0.5) lhY = 0.0;
 
          //System.out.println("Controller: "+ scaledInputs.getX() + ", "+ scaledInputs.getY()+ ", "+lhX+", "+lhY);
          
